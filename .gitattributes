@@ -1,3 +1,13 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 "Nuclear_cloud/node_modules/** text=auto eol=lf" 
+# 所有文件使用 LF 换行符
+* text=auto eol=lf
+
+# 排除二进制文件
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary

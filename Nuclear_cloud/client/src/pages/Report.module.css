@@ -1,0 +1,13 @@
+.bigText {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  line-height: 1.7;
+}
+
+.smallText {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.7;
+  margin: 8px 0;
+} 

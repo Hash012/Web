@@ -1,0 +1,11 @@
+flask
+flask-cors
+flask-jwt-extended
+werkzeug
+sqlite3
+pandas
+python-docx
+PyPDF2
+pdfplumber
+pytesseract
+Pillow 
