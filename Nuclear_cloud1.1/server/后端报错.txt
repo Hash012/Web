@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "C:\Users\lishuyan\anaconda3\envs\NuclearCloud\lib\site-packages\flask\app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\lishuyan\anaconda3\envs\NuclearCloud\lib\site-packages\flask\app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\lishuyan\anaconda3\envs\NuclearCloud\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\lishuyan\anaconda3\envs\NuclearCloud\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\lishuyan\anaconda3\envs\NuclearCloud\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\lishuyan\anaconda3\envs\NuclearCloud\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\lishuyan\anaconda3\envs\NuclearCloud\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\lishuyan\anaconda3\envs\NuclearCloud\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\lishuyan\anaconda3\envs\NuclearCloud\lib\site-packages\flask_jwt_extended\view_decorators.py", line 170, in decorator
+    return current_app.ensure_sync(fn)(*args, **kwargs)
+  File "D:\Nuclear_cloud\server\app.py", line 461, in upload_report
+    os.remove(temp_path)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'uploads\\temp_1752506922_2024.9利润表（无时间）.xlsx'
